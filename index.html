@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balghaith Airways</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" onclick="closeSidebar()">Close &times;</a>
+    <a href="#">Plan</a>
+    <a href="#">Hotels</a>
+    <a href="#">Cars</a>
+    <a href="#">Check In</a>
+    <a href="#">Support</a>
+  </div>
+
+  <header class="main-header">
+    <div class="top-bar">
+      <div class="logo">
+        <span class="menu-icon" onclick="openSidebar()">&#9776;</span>
+        <img src="https://cdn-icons-png.flaticon.com/512/681/681392.png" alt="Plane Logo" />
+        <span>Balghaith Airways</span>
+      </div>
+      <nav class="main-nav">
+        <a href="#">Flights</a>
+        <a href="#">Hotels</a>
+        <a href="#">Cars</a>
+        <a href="#">Check In</a>
+        <a href="#">Help</a>
+        <a href="#">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Where do you want to go?</h1>
+      <div class="booking-form">
+        <input type="date" id="travel-date" placeholder="Select date" />
+
+        <select id="passengers">
+          <option value="">Passengers</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4+</option>
+        </select>
+
+        <select id="category">
+          <option value="">Category</option>
+          <option value="adult">Adult</option>
+          <option value="teen">Teen</option>
+          <option value="child">Child</option>
+        </select>
+
+        <input type="file" id="file-upload" />
+        <button onclick="handleBooking()">Search Flights</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <img src="/images/istockphoto-1176446044-612x612.jpg" alt="Plane" />
+      <h3>Plan Your Trip</h3>
+    </div>
+    <div class="card">
+      <img src="/images/photo-1559023234-1e773470544f.jpeg" alt="Cockpit" />
+      <h3>Flight Services</h3>
+    </div>
+    <div class="card">
+      <img src="/images/istockphoto-520732153-612x612.jpg" alt="Luggage" />
+      <h3>Extra Baggage</h3>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy</a>
+    </div>
+    <p>&copy; 2025 Balghaith Airways</p>
+  </footer>
+</body>
+</html>
